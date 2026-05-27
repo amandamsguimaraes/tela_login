@@ -38,7 +38,6 @@
       overflow-x: hidden;
     }
 
-    /* Background decorations */
     .bg-canvas {
       position: fixed;
       inset: 0;
@@ -100,7 +99,6 @@
       filter: blur(40px);
     }
 
-    /* Main card */
     .page {
       position: relative;
       z-index: 1;
@@ -118,7 +116,6 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* ── LEFT PANEL ── */
     .brand-panel {
       background: linear-gradient(160deg, #0a1c38 0%, #071020 100%);
       display: flex;
@@ -253,7 +250,6 @@
       padding: 4px 10px;
     }
 
-    /* ── RIGHT PANEL ── */
     .form-panel {
       background: linear-gradient(160deg, #0c1e38 0%, #091529 100%);
       display: flex;
@@ -501,7 +497,6 @@
     }
     .register a:hover { color: var(--gold-light); }
 
-    /* Toast */
     .toast {
       position: fixed;
       bottom: 28px; left: 50%;
@@ -528,11 +523,7 @@
       transform: translateX(-50%) translateY(0);
     }
 
-    /* ══════════════════════════════
-       RESPONSIVIDADE
-    ══════════════════════════════ */
-
-    /* Tablets (≤ 900px) → coluna única, brand menor */
+    /* Bloco de responsividade */
     @media (max-width: 900px) {
       body { padding: 0; align-items: stretch; }
 
@@ -555,7 +546,6 @@
       .form-panel { padding: 48px 32px 56px; }
     }
 
-    /* Mobile (≤ 540px) → tudo compacto */
     @media (max-width: 540px) {
       .brand-panel { padding: 36px 24px 32px; }
 
@@ -579,7 +569,6 @@
       .btn-sso   { height: 42px; font-size: 11px; }
     }
 
-    /* Extra pequeno (≤ 360px) */
     @media (max-width: 360px) {
       .brand-panel { padding: 28px 18px 24px; }
       .form-panel  { padding: 28px 18px 40px; }
@@ -599,7 +588,6 @@
 
 <div class="page">
 
-  <!-- ── Painel esquerdo: marca ── -->
   <div class="brand-panel">
     <div class="logo-container">
       <div class="logo-glow"></div>
@@ -625,7 +613,6 @@
     </div>
   </div>
 
-  <!-- ── Painel direito: formulário ── -->
   <div class="form-panel">
     <h1 class="form-heading">Acesso à Plataforma</h1>
     <p class="form-sub">Identifique-se para continuar sua missão</p>
